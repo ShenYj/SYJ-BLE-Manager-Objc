@@ -9,14 +9,13 @@
 /* Begin PBXBuildFile section */
 		8AB3011D2912B0DFCC23B9B3 /* libPods-BLEManagerObjcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AAF1C7855BA8639550E88B /* libPods-BLEManagerObjcTests.a */; };
 		F17BACBBF6C50387B581CF55 /* libPods-BLEManagerObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99AA501DE7C96D08BCFDB3D /* libPods-BLEManagerObjc.a */; };
-		F774559722DDFD900089D0CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F774559622DDFD900089D0CA /* AppDelegate.m */; };
-		F774559A22DDFD900089D0CA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F774559922DDFD900089D0CA /* SceneDelegate.m */; };
-		F774559D22DDFD900089D0CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774559C22DDFD900089D0CA /* ViewController.m */; };
-		F77455A022DDFD900089D0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F774559E22DDFD900089D0CA /* Main.storyboard */; };
-		F77455A222DDFD910089D0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77455A122DDFD910089D0CA /* Assets.xcassets */; };
-		F77455A522DDFD910089D0CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77455A322DDFD910089D0CA /* LaunchScreen.storyboard */; };
-		F77455A822DDFD910089D0CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455A722DDFD910089D0CA /* main.m */; };
 		F77455B222DDFD910089D0CA /* BLEManagerObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455B122DDFD910089D0CA /* BLEManagerObjcTests.m */; };
+		F77455C822DE00110089D0CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77455BF22DE00110089D0CA /* Assets.xcassets */; };
+		F77455C922DE00110089D0CA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C022DE00110089D0CA /* SceneDelegate.m */; };
+		F77455CA22DE00110089D0CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77455C122DE00110089D0CA /* LaunchScreen.storyboard */; };
+		F77455CB22DE00110089D0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77455C322DE00110089D0CA /* Main.storyboard */; };
+		F77455CC22DE00110089D0CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C522DE00110089D0CA /* main.m */; };
+		F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C622DE00110089D0CA /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,20 +36,18 @@
 		E0C7DD309238E1BF83D15056 /* Pods-BLEManagerObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjc.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjc/Pods-BLEManagerObjc.release.xcconfig"; sourceTree = "<group>"; };
 		E99AA501DE7C96D08BCFDB3D /* libPods-BLEManagerObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEManagerObjc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774559222DDFD900089D0CA /* BLEManagerObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEManagerObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F774559522DDFD900089D0CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F774559622DDFD900089D0CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F774559822DDFD900089D0CA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		F774559922DDFD900089D0CA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F774559B22DDFD900089D0CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F774559C22DDFD900089D0CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F774559F22DDFD900089D0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F77455A122DDFD910089D0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F77455A422DDFD910089D0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F77455A622DDFD910089D0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F77455A722DDFD910089D0CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F77455AD22DDFD910089D0CA /* BLEManagerObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEManagerObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77455B122DDFD910089D0CA /* BLEManagerObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEManagerObjcTests.m; sourceTree = "<group>"; };
 		F77455B322DDFD910089D0CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77455BE22DE00110089D0CA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F77455BF22DE00110089D0CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F77455C022DE00110089D0CA /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F77455C222DE00110089D0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F77455C422DE00110089D0CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F77455C522DE00110089D0CA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F77455C622DE00110089D0CA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F77455C722DE00110089D0CA /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +73,7 @@
 		5BEF15D6CDE124723152FC8F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				F77455BC22DE00050089D0CA /* SYJBLEManagerObjc */,
 				B773FE2EAA0F0AF228B5F390 /* Pods-BLEManagerObjc.debug.xcconfig */,
 				E0C7DD309238E1BF83D15056 /* Pods-BLEManagerObjc.release.xcconfig */,
 				C3029F36D050C1DB2EF7B8CC /* Pods-BLEManagerObjcTests.debug.xcconfig */,
@@ -116,17 +114,9 @@
 		F774559422DDFD900089D0CA /* BLEManagerObjc */ = {
 			isa = PBXGroup;
 			children = (
-				F774559522DDFD900089D0CA /* AppDelegate.h */,
-				F774559622DDFD900089D0CA /* AppDelegate.m */,
-				F774559822DDFD900089D0CA /* SceneDelegate.h */,
-				F774559922DDFD900089D0CA /* SceneDelegate.m */,
-				F774559B22DDFD900089D0CA /* ViewController.h */,
-				F774559C22DDFD900089D0CA /* ViewController.m */,
-				F774559E22DDFD900089D0CA /* Main.storyboard */,
-				F77455A122DDFD910089D0CA /* Assets.xcassets */,
-				F77455A322DDFD910089D0CA /* LaunchScreen.storyboard */,
-				F77455A622DDFD910089D0CA /* Info.plist */,
-				F77455A722DDFD910089D0CA /* main.m */,
+				F77455D222DE00510089D0CA /* UIClasses */,
+				F77455CE22DE002C0089D0CA /* SYJBLEManagerObjc */,
+				F77455BD22DE00110089D0CA /* SupportingFiles */,
 			);
 			path = BLEManagerObjc;
 			sourceTree = "<group>";
@@ -138,6 +128,44 @@
 				F77455B322DDFD910089D0CA /* Info.plist */,
 			);
 			path = BLEManagerObjcTests;
+			sourceTree = "<group>";
+		};
+		F77455BC22DE00050089D0CA /* SYJBLEManagerObjc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SYJBLEManagerObjc;
+			path = BLEManagerObjc/SYJBLEManagerObjc;
+			sourceTree = "<group>";
+		};
+		F77455BD22DE00110089D0CA /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F77455A622DDFD910089D0CA /* Info.plist */,
+				F77455BE22DE00110089D0CA /* AppDelegate.h */,
+				F77455C622DE00110089D0CA /* AppDelegate.m */,
+				F77455C722DE00110089D0CA /* SceneDelegate.h */,
+				F77455C022DE00110089D0CA /* SceneDelegate.m */,
+				F77455BF22DE00110089D0CA /* Assets.xcassets */,
+				F77455C122DE00110089D0CA /* LaunchScreen.storyboard */,
+				F77455C322DE00110089D0CA /* Main.storyboard */,
+				F77455C522DE00110089D0CA /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F77455CE22DE002C0089D0CA /* SYJBLEManagerObjc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SYJBLEManagerObjc;
+			sourceTree = "<group>";
+		};
+		F77455D222DE00510089D0CA /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F77455A522DDFD910089D0CA /* LaunchScreen.storyboard in Resources */,
-				F77455A222DDFD910089D0CA /* Assets.xcassets in Resources */,
-				F77455A022DDFD900089D0CA /* Main.storyboard in Resources */,
+				F77455CB22DE00110089D0CA /* Main.storyboard in Resources */,
+				F77455C822DE00110089D0CA /* Assets.xcassets in Resources */,
+				F77455CA22DE00110089D0CA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,10 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F774559D22DDFD900089D0CA /* ViewController.m in Sources */,
-				F774559722DDFD900089D0CA /* AppDelegate.m in Sources */,
-				F77455A822DDFD910089D0CA /* main.m in Sources */,
-				F774559A22DDFD900089D0CA /* SceneDelegate.m in Sources */,
+				F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */,
+				F77455CC22DE00110089D0CA /* main.m in Sources */,
+				F77455C922DE00110089D0CA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,20 +399,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F774559E22DDFD900089D0CA /* Main.storyboard */ = {
+		F77455C122DE00110089D0CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F774559F22DDFD900089D0CA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F77455A322DDFD910089D0CA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F77455A422DDFD910089D0CA /* Base */,
+				F77455C222DE00110089D0CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F77455C322DE00110089D0CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F77455C422DE00110089D0CA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -508,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
-				INFOPLIST_FILE = BLEManagerObjc/Info.plist;
+				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,7 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
-				INFOPLIST_FILE = BLEManagerObjc/Info.plist;
+				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
