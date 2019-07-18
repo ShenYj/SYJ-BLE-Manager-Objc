@@ -48,6 +48,7 @@
 		F77455C522DE00110089D0CA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F77455C622DE00110089D0CA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F77455C722DE00110089D0CA /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F774560B22E09B9E0089D0CA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				F77455A622DDFD910089D0CA /* Info.plist */,
+				F774560B22E09B9E0089D0CA /* PrefixHeader.pch */,
 				F77455BE22DE00110089D0CA /* AppDelegate.h */,
 				F77455C622DE00110089D0CA /* AppDelegate.m */,
 				F77455C722DE00110089D0CA /* SceneDelegate.h */,
@@ -535,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFIles/PrefixHeader.pch";
 				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFIles/PrefixHeader.pch";
 				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
