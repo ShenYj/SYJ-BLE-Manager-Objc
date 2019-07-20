@@ -19,6 +19,7 @@
 		F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C622DE00110089D0CA /* AppDelegate.m */; };
 		F774561022E0ADBE0089D0CA /* SYJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */; };
 		F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */; };
+		F774561722E2C5D40089D0CA /* SYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561622E2C5D40089D0CA /* SYJNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBaseViewController.m; sourceTree = "<group>"; };
 		F774561222E0AE6C0089D0CA /* SYJNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJNavigationBar.h; sourceTree = "<group>"; };
 		F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationBar.m; sourceTree = "<group>"; };
+		F774561522E2C5D40089D0CA /* SYJNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJNavigationController.h; sourceTree = "<group>"; };
+		F774561622E2C5D40089D0CA /* SYJNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,8 @@
 			children = (
 				F774560E22E0ADBE0089D0CA /* SYJBaseViewController.h */,
 				F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */,
+				F774561522E2C5D40089D0CA /* SYJNavigationController.h */,
+				F774561622E2C5D40089D0CA /* SYJNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F774561722E2C5D40089D0CA /* SYJNavigationController.m in Sources */,
 				F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */,
 				F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */,
 				F77455CC22DE00110089D0CA /* main.m in Sources */,

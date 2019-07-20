@@ -17,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (IOS_VERSION < 13.0) {
+        SYJBaseViewController *rootVC = [[SYJBaseViewController alloc] init];
+        SYJNavigationController *rootTabController = [[SYJNavigationController alloc] initWithRootViewController:rootVC];
+        self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
+        self.window.rootViewController = rootTabController;
+        [self.window makeKeyAndVisible];
+    }
     return YES;
 }
 

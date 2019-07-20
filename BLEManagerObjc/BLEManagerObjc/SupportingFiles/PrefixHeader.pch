@@ -14,7 +14,7 @@
 #ifdef __OBJC__
 
 #import "SYJBaseViewController.h"
-//#import "SYJNavigationController.h"
+#import "SYJNavigationController.h"
 //#import "NSString+SYJImageScaled.h"
 
 #import <Masonry.h>
