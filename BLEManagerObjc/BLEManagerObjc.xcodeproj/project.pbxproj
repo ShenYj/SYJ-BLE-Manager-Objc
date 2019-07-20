@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EF3B0C0E86F4B7C48BE2696 /* libPods-BLEManagerObjc-BLEManagerObjcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE60AA55700DA8A72F4B1A2 /* libPods-BLEManagerObjc-BLEManagerObjcTests.a */; };
 		8AB3011D2912B0DFCC23B9B3 /* libPods-BLEManagerObjcTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7AAF1C7855BA8639550E88B /* libPods-BLEManagerObjcTests.a */; };
 		F17BACBBF6C50387B581CF55 /* libPods-BLEManagerObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99AA501DE7C96D08BCFDB3D /* libPods-BLEManagerObjc.a */; };
 		F77455B222DDFD910089D0CA /* BLEManagerObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455B122DDFD910089D0CA /* BLEManagerObjcTests.m */; };
@@ -16,6 +17,8 @@
 		F77455CB22DE00110089D0CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77455C322DE00110089D0CA /* Main.storyboard */; };
 		F77455CC22DE00110089D0CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C522DE00110089D0CA /* main.m */; };
 		F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F77455C622DE00110089D0CA /* AppDelegate.m */; };
+		F774561022E0ADBE0089D0CA /* SYJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */; };
+		F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CE60AA55700DA8A72F4B1A2 /* libPods-BLEManagerObjc-BLEManagerObjcTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEManagerObjc-BLEManagerObjcTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D52B11AACC6A86998C38903 /* Pods-BLEManagerObjc-BLEManagerObjcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjc-BLEManagerObjcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjc-BLEManagerObjcTests/Pods-BLEManagerObjc-BLEManagerObjcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		50BA7AE0819F1BF9F4AA4D64 /* Pods-BLEManagerObjcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjcTests/Pods-BLEManagerObjcTests.release.xcconfig"; sourceTree = "<group>"; };
 		B773FE2EAA0F0AF228B5F390 /* Pods-BLEManagerObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjc/Pods-BLEManagerObjc.debug.xcconfig"; sourceTree = "<group>"; };
 		B7AAF1C7855BA8639550E88B /* libPods-BLEManagerObjcTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEManagerObjcTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3029F36D050C1DB2EF7B8CC /* Pods-BLEManagerObjcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjcTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjcTests/Pods-BLEManagerObjcTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD5D6E108559D89BDD4FB746 /* Pods-BLEManagerObjc-BLEManagerObjcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjc-BLEManagerObjcTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjc-BLEManagerObjcTests/Pods-BLEManagerObjc-BLEManagerObjcTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0C7DD309238E1BF83D15056 /* Pods-BLEManagerObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEManagerObjc.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEManagerObjc/Pods-BLEManagerObjc.release.xcconfig"; sourceTree = "<group>"; };
 		E99AA501DE7C96D08BCFDB3D /* libPods-BLEManagerObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEManagerObjc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774559222DDFD900089D0CA /* BLEManagerObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEManagerObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +55,10 @@
 		F77455C622DE00110089D0CA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F77455C722DE00110089D0CA /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F774560B22E09B9E0089D0CA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F774560E22E0ADBE0089D0CA /* SYJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBaseViewController.h; sourceTree = "<group>"; };
+		F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBaseViewController.m; sourceTree = "<group>"; };
+		F774561222E0AE6C0089D0CA /* SYJNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJNavigationBar.h; sourceTree = "<group>"; };
+		F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AB3011D2912B0DFCC23B9B3 /* libPods-BLEManagerObjcTests.a in Frameworks */,
+				6EF3B0C0E86F4B7C48BE2696 /* libPods-BLEManagerObjc-BLEManagerObjcTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,8 @@
 				E0C7DD309238E1BF83D15056 /* Pods-BLEManagerObjc.release.xcconfig */,
 				C3029F36D050C1DB2EF7B8CC /* Pods-BLEManagerObjcTests.debug.xcconfig */,
 				50BA7AE0819F1BF9F4AA4D64 /* Pods-BLEManagerObjcTests.release.xcconfig */,
+				2D52B11AACC6A86998C38903 /* Pods-BLEManagerObjc-BLEManagerObjcTests.debug.xcconfig */,
+				CD5D6E108559D89BDD4FB746 /* Pods-BLEManagerObjc-BLEManagerObjcTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -88,6 +101,7 @@
 			children = (
 				E99AA501DE7C96D08BCFDB3D /* libPods-BLEManagerObjc.a */,
 				B7AAF1C7855BA8639550E88B /* libPods-BLEManagerObjcTests.a */,
+				2CE60AA55700DA8A72F4B1A2 /* libPods-BLEManagerObjc-BLEManagerObjcTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,8 +180,36 @@
 		F77455D222DE00510089D0CA /* UIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				F774560C22E0AD940089D0CA /* Main */,
 			);
 			path = UIClasses;
+			sourceTree = "<group>";
+		};
+		F774560C22E0AD940089D0CA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F774561122E0AE320089D0CA /* View */,
+				F774560D22E0ADA20089D0CA /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F774560D22E0ADA20089D0CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F774560E22E0ADBE0089D0CA /* SYJBaseViewController.h */,
+				F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F774561122E0AE320089D0CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F774561222E0AE6C0089D0CA /* SYJNavigationBar.h */,
+				F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,9 +351,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BLEManagerObjc-BLEManagerObjcTests/Pods-BLEManagerObjc-BLEManagerObjcTests-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -342,9 +387,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BLEManagerObjc/Pods-BLEManagerObjc-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */,
 				F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */,
 				F77455CC22DE00110089D0CA /* main.m in Sources */,
+				F774561022E0ADBE0089D0CA /* SYJBaseViewController.m in Sources */,
 				F77455C922DE00110089D0CA /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
