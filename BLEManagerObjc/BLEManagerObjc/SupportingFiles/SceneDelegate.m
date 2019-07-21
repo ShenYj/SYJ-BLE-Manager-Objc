@@ -1,4 +1,5 @@
 #import "SceneDelegate.h"
+#import "SYJHomeViewController.h"
 
 @interface SceneDelegate ()
 
@@ -11,7 +12,7 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-    SYJBaseViewController *rootVC = [[SYJBaseViewController alloc] init];
+    SYJHomeViewController *rootVC = [[SYJHomeViewController alloc] init];
     SYJNavigationController *rootTabController = [[SYJNavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = rootTabController;
     [self.window makeKeyAndVisible];

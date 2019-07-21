@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前手机朝向， 是竖屏还是横屏
 @property (nonatomic, assign, readonly) BOOL isPortrait;
 
+
+- (void)prepareSubBaseView;
+
 @end
 
 NS_ASSUME_NONNULL_END

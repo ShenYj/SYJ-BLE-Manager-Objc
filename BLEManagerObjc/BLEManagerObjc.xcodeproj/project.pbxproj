@@ -20,6 +20,8 @@
 		F774561022E0ADBE0089D0CA /* SYJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774560F22E0ADBE0089D0CA /* SYJBaseViewController.m */; };
 		F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */; };
 		F774561722E2C5D40089D0CA /* SYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561622E2C5D40089D0CA /* SYJNavigationController.m */; };
+		F774561C22E2C8690089D0CA /* SYJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F774561B22E2C8690089D0CA /* SYJHomeViewController.m */; };
+		F774561E22E49BE40089D0CA /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = F774561D22E49BE40089D0CA /* loading.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationBar.m; sourceTree = "<group>"; };
 		F774561522E2C5D40089D0CA /* SYJNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJNavigationController.h; sourceTree = "<group>"; };
 		F774561622E2C5D40089D0CA /* SYJNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationController.m; sourceTree = "<group>"; };
+		F774561A22E2C8690089D0CA /* SYJHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJHomeViewController.h; sourceTree = "<group>"; };
+		F774561B22E2C8690089D0CA /* SYJHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJHomeViewController.m; sourceTree = "<group>"; };
+		F774561D22E49BE40089D0CA /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F77455A622DDFD910089D0CA /* Info.plist */,
+				F774561D22E49BE40089D0CA /* loading.gif */,
 				F774560B22E09B9E0089D0CA /* PrefixHeader.pch */,
 				F77455BE22DE00110089D0CA /* AppDelegate.h */,
 				F77455C622DE00110089D0CA /* AppDelegate.m */,
@@ -183,6 +189,7 @@
 		F77455D222DE00510089D0CA /* UIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				F774561822E2C8540089D0CA /* Home */,
 				F774560C22E0AD940089D0CA /* Main */,
 			);
 			path = UIClasses;
@@ -215,6 +222,23 @@
 				F774561322E0AE6C0089D0CA /* SYJNavigationBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F774561822E2C8540089D0CA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F774561922E2C85C0089D0CA /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F774561922E2C85C0089D0CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F774561A22E2C8690089D0CA /* SYJHomeViewController.h */,
+				F774561B22E2C8690089D0CA /* SYJHomeViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F77455CB22DE00110089D0CA /* Main.storyboard in Resources */,
+				F774561E22E49BE40089D0CA /* loading.gif in Resources */,
 				F77455C822DE00110089D0CA /* Assets.xcassets in Resources */,
 				F77455CA22DE00110089D0CA /* LaunchScreen.storyboard in Resources */,
 			);
@@ -397,7 +422,6 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -430,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F774561722E2C5D40089D0CA /* SYJNavigationController.m in Sources */,
+				F774561C22E2C8690089D0CA /* SYJHomeViewController.m in Sources */,
 				F774561422E0AE6C0089D0CA /* SYJNavigationBar.m in Sources */,
 				F77455CD22DE00110089D0CA /* AppDelegate.m in Sources */,
 				F77455CC22DE00110089D0CA /* main.m in Sources */,

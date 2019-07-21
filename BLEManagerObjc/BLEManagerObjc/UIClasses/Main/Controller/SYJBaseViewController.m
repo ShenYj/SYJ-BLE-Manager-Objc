@@ -46,6 +46,7 @@
                                              selector: @selector(orientationDidChangeNotification:)
                                                  name: UIDeviceOrientationDidChangeNotification
                                                object: nil];
+    [self prepareSubBaseView];
 }
 
 - (void)dealloc
@@ -93,6 +94,8 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
+- (void)prepareSubBaseView {}
+
 /** 设置标题 */
 - (void)setTitle:(NSString *)title
 {
@@ -129,7 +132,7 @@
     BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation);
     //    BOOL isLandscape = UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation);
     _isPortrait = isPortrait;
-    NSLog(@"(orientationDidChangeNotification)变化后：%@", _isPortrait ? @"竖屏" : @"横屏");
+//    NSLog(@"(orientationDidChangeNotification)变化后：%@", _isPortrait ? @"竖屏" : @"横屏");
     self.syj_navigationBar.frame = ({
         CGRect rect = self.syj_navigationBar.frame;
         rect.size.width = SCREEN_WIDTH;

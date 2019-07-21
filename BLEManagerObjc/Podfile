@@ -11,6 +11,8 @@ target 'BLEManagerObjc' do
   pod 'MJRefresh'
   pod 'AFNetworking'
   pod 'JSExtension'
+  pod 'SDWebImage'
+  pod 'SDWebImage/GIF'
   
   
   target 'BLEManagerObjcTests' do
