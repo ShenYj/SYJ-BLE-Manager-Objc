@@ -10,6 +10,19 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShrtcutItemTitle</key>
+			<string>扫描蓝牙</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>favrite</string>
+		</dict>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>Blue Bird</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>

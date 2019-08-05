@@ -26,9 +26,12 @@
         self.window.rootViewController = rootTabController;
         [self.window makeKeyAndVisible];
     }
+    
+    // ShortcutIcon
+    [self initShortcutItems:[UIApplication sharedApplication]];
+    
     return YES;
 }
-
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
@@ -52,30 +55,49 @@
 }
 
 
-// 菜单跳转
-- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+
+- (void)initShortcutItems:(UIApplication *)application
+{
+    UIApplicationShortcutIcon *search = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeSearch];
+    UIApplicationShortcutItem *searchItem = [[UIApplicationShortcutItem alloc] initWithType:@"BLE_SCAN"
+                                                                             localizedTitle:NSLocalizedString(@"BLE_OPT_SCAN", @"搜索蓝牙")
+                                                                          localizedSubtitle:nil
+                                                                                       icon:search
+                                                                                   userInfo:nil];
     
-    UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
-    
-    /*
-     *  方式one - localizedTitle
-     if ([shortcutItem.localizedTitle isEqualToString:@"时尚之都"]) {
-     tabBarVC.selectedIndex = 0;
-     }else if ([shortcutItem.localizedTitle isEqualToString:@"知识海洋"]){ //知识海洋
-     tabBarVC.selectedIndex = 1;
-     }else{
-     tabBarVC.selectedIndex = 2; //联系的人
-     }
-     */
-    
-    //方式two - type
-    if ([shortcutItem.type isEqualToString:@"movie"]) { //时尚之都
-        tabBarVC.selectedIndex = 0;
-    }else if ([shortcutItem.type isEqualToString:@"book"]){ //知识海洋
-        tabBarVC.selectedIndex = 1;
-    }else{
-        tabBarVC.selectedIndex = 2; //联系的人
-    }
+    UIApplicationShortcutIcon *complete = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeTaskCompleted];
+    UIApplicationShortcutItem *stopSearchItem = [[UIApplicationShortcutItem alloc] initWithType:@"BLE_SCAN_STOP"
+                                                                                 localizedTitle:NSLocalizedString(@"BLE_OPT_SCAN_STOP", @"停止搜索蓝牙")
+                                                                              localizedSubtitle:nil
+                                                                                           icon:complete
+                                                                                       userInfo:nil];
+    application.shortcutItems = @[searchItem, stopSearchItem];
 }
+
+// 菜单跳转
+//- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+//    
+//    UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+//    
+//    /*
+//     *  方式one - localizedTitle
+//     if ([shortcutItem.localizedTitle isEqualToString:@"时尚之都"]) {
+//     tabBarVC.selectedIndex = 0;
+//     }else if ([shortcutItem.localizedTitle isEqualToString:@"知识海洋"]){ //知识海洋
+//     tabBarVC.selectedIndex = 1;
+//     }else{
+//     tabBarVC.selectedIndex = 2; //联系的人
+//     }
+//     */
+//    
+//    //方式two - type
+//    if ([shortcutItem.type isEqualToString:@"movie"]) { //时尚之都
+//        tabBarVC.selectedIndex = 0;
+//    }else if ([shortcutItem.type isEqualToString:@"book"]){ //知识海洋
+//        tabBarVC.selectedIndex = 1;
+//    }else{
+//        tabBarVC.selectedIndex = 2; //联系的人
+//    }
+//}
 
 @end

@@ -1,0 +1,9 @@
+/* 
+  infoPlist.strings
+  BLEManagerObjc
+
+  Created by ShenYj on 2019/8/5.
+  Copyright © 2019 ShenYj. All rights reserved.
+*/
+
+CFBundleDisplayName="Blue Bird";
