@@ -16,7 +16,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
     if (IOS_VERSION < 13.0) {
         SYJHomeViewController *rootVC = [[SYJHomeViewController alloc] init];
@@ -50,5 +51,31 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+
+// 菜单跳转
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    
+    UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+    
+    /*
+     *  方式one - localizedTitle
+     if ([shortcutItem.localizedTitle isEqualToString:@"时尚之都"]) {
+     tabBarVC.selectedIndex = 0;
+     }else if ([shortcutItem.localizedTitle isEqualToString:@"知识海洋"]){ //知识海洋
+     tabBarVC.selectedIndex = 1;
+     }else{
+     tabBarVC.selectedIndex = 2; //联系的人
+     }
+     */
+    
+    //方式two - type
+    if ([shortcutItem.type isEqualToString:@"movie"]) { //时尚之都
+        tabBarVC.selectedIndex = 0;
+    }else if ([shortcutItem.type isEqualToString:@"book"]){ //知识海洋
+        tabBarVC.selectedIndex = 1;
+    }else{
+        tabBarVC.selectedIndex = 2; //联系的人
+    }
+}
 
 @end
