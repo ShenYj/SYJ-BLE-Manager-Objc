@@ -8,7 +8,8 @@
 @implementation SceneDelegate
 
 
-- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions
+{
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
@@ -51,5 +52,34 @@
     // to restore the scene back to its current state.
 }
 
+
+#pragma mark - System Integration
+// Called when the user activates your application by selecting a shortcut on the home screen,
+// and the window scene is already connected.
+- (void)windowScene:(UIWindowScene *)windowScene performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler
+{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    SYJNavigationController *rootNav = (SYJNavigationController *)self.window.rootViewController;
+#pragma clang diagnostic pop
+    if ([shortcutItem.type isEqualToString:@"BLE_SCAN"]) { //时尚之都
+        NSLog(@"BLE_SCAN");
+    }
+    else if ([shortcutItem.type isEqualToString:@"BLE_SCAN_STOP"]) {
+        NSLog(@"BLE_SCAN_STOP");
+    }
+    else {
+        
+    }
+}
+
+// Called after the user indicates they want to accept a CloudKit sharing invitation in your application
+// and the window scene is already connected.
+// You should use the CKShareMetadata object's shareURL and containerIdentifier to schedule a CKAcceptSharesOperation, then start using
+// the resulting CKShare and its associated record(s), which will appear in the CKContainer's shared database in a zone matching that of the record's owner.
+- (void)windowScene:(UIWindowScene *)windowScene userDidAcceptCloudKitShareWithMetadata:(CKShareMetadata *)cloudKitShareMetadata
+{
+    
+}
 
 @end

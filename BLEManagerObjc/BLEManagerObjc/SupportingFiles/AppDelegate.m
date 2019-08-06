@@ -33,28 +33,27 @@
     return YES;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
+- (void)applicationWillTerminate:(UIApplication *)application
+{
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 
 #pragma mark - UISceneSession lifecycle
 
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
+- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options
+{
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
+- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions
+{
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
-
-
 
 - (void)initShortcutItems:(UIApplication *)application
 {
@@ -75,29 +74,21 @@
 }
 
 // 菜单跳转
-//- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
-//    
-//    UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
-//    
-//    /*
-//     *  方式one - localizedTitle
-//     if ([shortcutItem.localizedTitle isEqualToString:@"时尚之都"]) {
-//     tabBarVC.selectedIndex = 0;
-//     }else if ([shortcutItem.localizedTitle isEqualToString:@"知识海洋"]){ //知识海洋
-//     tabBarVC.selectedIndex = 1;
-//     }else{
-//     tabBarVC.selectedIndex = 2; //联系的人
-//     }
-//     */
-//    
-//    //方式two - type
-//    if ([shortcutItem.type isEqualToString:@"movie"]) { //时尚之都
-//        tabBarVC.selectedIndex = 0;
-//    }else if ([shortcutItem.type isEqualToString:@"book"]){ //知识海洋
-//        tabBarVC.selectedIndex = 1;
-//    }else{
-//        tabBarVC.selectedIndex = 2; //联系的人
-//    }
-//}
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    SYJNavigationController *rootNav = (SYJNavigationController *)self.window.rootViewController;
+#pragma clang diagnostic pop
+    if ([shortcutItem.type isEqualToString:@"BLE_SCAN"]) { //时尚之都
+        NSLog(@"BLE_SCAN");
+    }
+    else if ([shortcutItem.type isEqualToString:@"BLE_SCAN_STOP"]) {
+        NSLog(@"BLE_SCAN_STOP");
+    }
+    else {
+        
+    }
+}
 
 @end
