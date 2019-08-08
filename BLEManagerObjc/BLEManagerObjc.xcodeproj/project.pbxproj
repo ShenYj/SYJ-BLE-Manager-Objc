@@ -662,7 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFIles/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -682,7 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KS5QTFAS57;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFIles/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = BLEManagerObjc/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -41,7 +41,10 @@
 
 #pragma mark - UISceneSession lifecycle
 
+#pragma clang push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options
+#pragma clang pop
 {
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
